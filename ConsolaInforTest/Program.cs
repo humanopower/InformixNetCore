@@ -11,8 +11,8 @@ namespace ConsolaInforTest
 			Console.WriteLine("Hello World!");
 			// lets say we want to run this command:    
 			//  t=$(echo 'this is a test'); echo "$t" | grep -o 'is a'
-			var output = ExecuteBashCommand("t=$(echo 'this is a test'); echo \"$t\" | grep -o 'is a'");
-Console.WriteLine(output);
+			var output = ExecuteBashCommand("ln /app/clidriver/lib/libxml2.so.2.7.6 /app/clidriver/lib/libxml2.so.2");
+			Console.WriteLine(output);
 
 			// try
 			// {
