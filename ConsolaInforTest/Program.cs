@@ -11,7 +11,6 @@ namespace ConsolaInforTest
 
 
 			try
-
 			{
 				//dbc:informix-sqli://vu-prd06.pemex.pmx.com:2033/siic:INFORMIXSERVER=siic_tcp;user=osaf0300;password=Pemex.2015
 				Console.WriteLine("Opening the connection");
