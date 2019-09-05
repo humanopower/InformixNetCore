@@ -12,30 +12,30 @@ namespace ConsolaInforTest
 			// lets say we want to run this command:    
 			//  t=$(echo 'this is a test'); echo "$t" | grep -o 'is a'
 			var output = ExecuteBashCommand("t=$(echo 'this is a test'); echo \"$t\" | grep -o 'is a'");
+Console.WriteLine(output);
+
+			// try
+			// {
+			// 	//dbc:informix-sqli://vu-prd06.pemex.pmx.com:2033/siic:INFORMIXSERVER=siic_tcp;user=osaf0300;password=Pemex.2015
+			// 	Console.WriteLine("Opening the connection");
+
+			// 	DB2Connection connection = new DB2Connection("server=vu-prd06.pemex.pmx.com:2033;uid=osaf0300;pwd=Pemex.2015;database=siic");
+
+			// 	connection.Open();
+
+			// 	Console.WriteLine("Connection open");
 
 
-			try
-			{
-				//dbc:informix-sqli://vu-prd06.pemex.pmx.com:2033/siic:INFORMIXSERVER=siic_tcp;user=osaf0300;password=Pemex.2015
-				Console.WriteLine("Opening the connection");
 
-				DB2Connection connection = new DB2Connection("server=vu-prd06.pemex.pmx.com:2033;uid=osaf0300;pwd=Pemex.2015;database=siic");
+			// }
 
-				connection.Open();
+			// catch (Exception dbException)
 
-				Console.WriteLine("Connection open");
+			// {
 
+			// 	Console.WriteLine("Exception: " + dbException.Message);
 
-
-			}
-
-			catch (Exception dbException)
-
-			{
-
-				Console.WriteLine("Exception: " + dbException.Message);
-
-			}
+			// }
 
 
 
