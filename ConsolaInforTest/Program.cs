@@ -11,31 +11,33 @@ namespace ConsolaInforTest
 			Console.WriteLine("Hello World!");
 			// lets say we want to run this command:    
 			//  t=$(echo 'this is a test'); echo "$t" | grep -o 'is a'
-			var output = ExecuteBashCommand("ln /app/clidriver/lib/libxml2.so.2.7.6 /app/clidriver/lib/libxml2.so.2");
-			Console.WriteLine(output);
+			//	var output = ExecuteBashCommand("ln /app/clidriver/lib/libxml2.so.2.7.6 /app/clidriver/lib/libxml2.so.2");
+			//Console.WriteLine(output);
 
-			// try
-			// {
-			// 	//dbc:informix-sqli://vu-prd06.pemex.pmx.com:2033/siic:INFORMIXSERVER=siic_tcp;user=osaf0300;password=Pemex.2015
-			// 	Console.WriteLine("Opening the connection");
+			try
+			{
+				// 	//dbc:informix-sqli://vu-prd06.pemex.pmx.com:2033/siic:INFORMIXSERVER=siic_tcp;user=osaf0300;password=Pemex.2015
+				//		value = "Database=irdoc;Host=172.19.178.18;Server=siic_tcp;Service=2033;Protocol=onsoctcp;UID=cdr;Password=Prod2016;Max Pool Size=400; Min Pool Size=1; Pooling=false;" />
+				Console.WriteLine("Opening the connection");
 
-			// 	DB2Connection connection = new DB2Connection("server=vu-prd06.pemex.pmx.com:2033;uid=osaf0300;pwd=Pemex.2015;database=siic");
+				//DB2Connection connection = new DB2Connection("server=vu-prd06.pemex.pmx.com:2033;uid=osaf0300;pwd=Pemex.2015;database=siic");
+				DB2Connection connection = new DB2Connection("Database = irdoc; Server =siic_tcp;  UID=cdr; Password = Prod2016; ");
 
-			// 	connection.Open();
+			 	connection.Open();
 
-			// 	Console.WriteLine("Connection open");
+	 	Console.WriteLine("Connection open");
 
 
 
-			// }
+			}
 
-			// catch (Exception dbException)
+			catch (Exception dbException)
 
-			// {
+			{
 
-			// 	Console.WriteLine("Exception: " + dbException.Message);
+				Console.WriteLine("Exception: " + dbException.Message);
 
-			// }
+			}
 
 
 
