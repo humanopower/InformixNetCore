@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,5 +8,11 @@
   <ItemGroup>
     <PackageReference Include="IBM.Data.DB2.Core-lnx" Version="1.3.0.100" />
   </ItemGroup>
+  <ItemGroup Condition="'$(os)' == 'UNIX'">
+    <PackageReference Include="IBM.Data.DB2.Core-lnx" Version="1.2.2.100" />
+  </ItemGroup>
 
+  <ItemGroup Condition="'$(os)' == 'Windows_NT'">
+    <PackageReference Include="IBM.Data.DB2.Core" Version="1.2.2.100" />
+  </ItemGroup>
 </Project>
