@@ -16,6 +16,7 @@ namespace ConsolaInforTest
 			//Console.WriteLine(output);
 
 			try
+
 			{
 				// 	//dbc:informix-sqli://vu-prd06.pemex.pmx.com:2033/siic:INFORMIXSERVER=siic_tcp;user=osaf0300;password=Pemex.2015
 				//		value = "Database=irdoc;Host=172.19.178.18;Server=siic_tcp;Service=2033;Protocol=onsoctcp;UID=cdr;Password=Prod2016;Max Pool Size=400; Min Pool Size=1; Pooling=false;" />
