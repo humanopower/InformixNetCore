@@ -11,7 +11,8 @@ namespace ConsolaInforTest
 			Console.WriteLine("Hello World!");
 			// lets say we want to run this command:    
 			//  t=$(echo 'this is a test'); echo "$t" | grep -o 'is a'
-			//	var output = ExecuteBashCommand("ln /app/clidriver/lib/libxml2.so.2.7.6 /app/clidriver/lib/libxml2.so.2");
+		    //var output = ExecuteBashCommand("ln /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.4 /app/clidriver/lib/libxml2.so.2");
+			//	var output = ExecuteBashCommand("ln /app/clidriver/lib/libxml2.so.2 /usr/lib/x86_64-linux-gnu/libxml2.so.2");
 			//Console.WriteLine(output);
 
 			try
@@ -21,6 +22,7 @@ namespace ConsolaInforTest
 				Console.WriteLine("Opening the connection");
 
 				//DB2Connection connection = new DB2Connection("server=vu-prd06.pemex.pmx.com:2033;uid=osaf0300;pwd=Pemex.2015;database=siic");
+
 				DB2Connection connection = new DB2Connection("Database = irdoc; Server =siic_tcp;  UID=cdr; Password = Prod2016; ");
 
 			 	connection.Open();
